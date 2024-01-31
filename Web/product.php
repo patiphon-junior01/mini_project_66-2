@@ -72,6 +72,23 @@
   </div>
   </div>
 
+
+  <!-- footer -->
+  <footer>
+    <div class="w-100 d-flex justify-content-between py-3 px-4 align-items-center">
+      <div>
+        <p class="mb-0 text-white fw-bold"> It66.iot-cm.com/it66g6</p>
+      </div>
+      <div>
+        <span class="mx-2 mb-0 text-white"> <a href="https://github.com/patiphon-junior01/mini_project_66-2"
+            class="text-white fs-4 mb-0" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        </span>
+        <span class="mx-2 mb-0 text-white"> <a href="mailto:patiphonwongsee01@gmail.com" class="text-white fs-4 mb-0"
+            target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a> </span>
+      </div>
+    </div>
+  </footer>
+
   <!--end content -->
 
   <script src="asset/framwork/jquery.js"></script>

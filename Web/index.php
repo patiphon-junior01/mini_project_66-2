@@ -146,18 +146,19 @@
         <li><span class="fw-bold">Step 2</span> : ESP32 ส่งข้อมูลอุณหภูมิเเละความชื้นไปยัง Lcd เพื่อเเสดงข้อมูล</li>
         <li><span class="fw-bold">Step 3</span> : หาก ESP32 มีการ Connect WIFI หรือ Internet
           จะส่งข้อมูลอุณหภูมิเเละความชื้น ผ่าน HTTP ไปยัง Web service</li>
-        <li><span class="fw-bold">Step 4</span> : Web service รับข้อมูลอุณหภูมิเเละความชื้นเเล้วส่งไปหรือ
+        <li><span class="fw-bold">Step 4</span> : Web service รับข้อมูลอุณหภูมิเเละความชื้นเเล้ว
           บันทึกลงฐานข้อมูลหากบันทึกสำเร็จจะส่งตอบกลับ ESP32 ว่าบันทึกสำเร็จเเล้ว</li>
         <li><span class="fw-bold">Step 5</span> : Client Browser คือ Users ที่เข้ามาใช้งาน web
-          เเล้วเมื่อการเข้าใช้งานจะได้รับข้อมูล อุณหภูมิเเละความชื้น จาก ฐานข้อมูลเพื่อเห็นค่าต่างๆผ่านหน้า website >>
+          เเล้วเมื่อเข้าใช้งานจะได้รับข้อมูล อุณหภูมิเเละความชื้น จาก ฐานข้อมูลเพื่อเห็นค่าต่างๆผ่านหน้า website >>
           <span><a href="/it66g6/Web/product.php" class="text-dark" target="_blank" rel="noopener noreferrer"><i
                 class="fas fa-temperature-low"></i> หน้าอุณหภูมิเเละความชื้นในอากาศ</a></span>
         </li>
       </ui>
     </div>
     <div class="px-5  mb-5">
-      <h3>ดาวโหลด Source Code ได้ที่ >> <span><a href="http://" class="text-dark" target="_blank"
-            rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></span></h3>
+      <h3>ดาวน์โหลด Source Code ได้ที่ >> <span><a href="https://github.com/patiphon-junior01/mini_project_66-2"
+            class="text-dark" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></span>
+      </h3>
     </div>
   </div>
 
@@ -207,8 +208,9 @@
         <p class="mb-0 text-white fw-bold"> It66.iot-cm.com/it66g6</p>
       </div>
       <div>
-        <span class="mx-2 mb-0 text-white"> <a href="mailto:patiphonwongsee01@gmail.com" class="text-white fs-4 mb-0"
-            target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a> </span>
+        <span class="mx-2 mb-0 text-white"> <a href="https://github.com/patiphon-junior01/mini_project_66-2"
+            class="text-white fs-4 mb-0" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        </span>
         <span class="mx-2 mb-0 text-white"> <a href="mailto:patiphonwongsee01@gmail.com" class="text-white fs-4 mb-0"
             target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a> </span>
       </div>
