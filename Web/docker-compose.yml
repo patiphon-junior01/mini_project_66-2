@@ -1,0 +1,58 @@
+version: "3.1"
+
+services:
+  tem-php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tem-php
+    volumes:
+      - ./:/var/www/html
+    restart: always
+    depends_on:
+      - tem-db
+    networks:
+      mynet:
+        ipv4_address: 172.26.0.2
+    ports:
+      - 80:80
+
+  tem-db:
+    image: mysql
+    container_name: tem-database
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - ./../data/data_erp:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789pong
+      MYSQL_DATABASE: 'PPD'
+    networks:
+      mynet:
+        ipv4_address: 172.26.0.3
+    ports:
+      - 3306:3306
+
+  # phpmyadmin
+  tem-phpmyadmin:
+    depends_on:
+      - tem-db
+    image: phpmyadmin
+    container_name: tem-phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: tem-db
+      MYSQL_ROOT_PASSWORD: 123456789pong
+    networks:
+      mynet:
+        ipv4_address: 172.26.0.4
+    ports:
+      - 8081:80
+
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.26.0.0/16
+          gateway: 172.26.0.1
